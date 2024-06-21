@@ -198,7 +198,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 06b74da64e6edb1439d2ff0e2a164400, type: 2}
+  - {fileID: 2100000, guid: 1a63a5aeb5e103345a9579aafdcf52f6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1402,7 +1402,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 0.8494018, b: 0.43867922, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -4445,7 +4445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77580d81a655e5a41961b8ca1ee98d75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 3708687268846442919, guid: b05d6039ed0f4e64ca25f5e2c51e32e0, type: 3}
+  Prefab: {fileID: 3708687268846442919, guid: 079685471fda9344e9210442101d952f, type: 3}
   BoosterSpawned: 1
   Boosters: {fileID: 236998842}
 --- !u!114 &2001789026
