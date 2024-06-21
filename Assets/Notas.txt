@@ -1,0 +1,5 @@
+Booster: 
+- Probar haciendo script aparte general para los boosters con lo de las colisiones y desp modificar eso desde el script Booster para que detecte cuándo spawnea un booster y cuándo se consume.
+- Se podría usar un InvokeRepeating q desp se cancele ?
+- Referenciar el bool de spawneo en el script del jguador para ver si con eso se soluciona (no funcionó)
+- Buscar video en yt a ver si se puede hacer mas fácil.
