@@ -21,6 +21,7 @@ namespace Player
         [Header("UI")]
         public TextMeshProUGUI textoVidas;
         public Win_Lose screenL;
+        public Win_Lose screenW;
 
 
         void Start()
@@ -41,19 +42,24 @@ namespace Player
         {
             if (collision.gameObject.CompareTag("KillZone"))
             {
-                //SceneManager.LoadScene("Game");
                 PlayerController.enabled = false;
                 transform.position = Spawnposition;
                 Time.timeScale = 1f;
-                player.jumpForce = 6;
+                //player.jumpForce = 6; //para que no existan errores con las variables 
+                //player.moveSpeed = 8;
                 Vida--;
                 PlayerController.enabled = true;
             }
-            if (collision.gameObject.CompareTag("Enemy"))
+            //if (collision.gameObject.CompareTag("Enemy"))
+            //{
+            //    SceneManager.LoadScene("Game");
+            //    Time.timeScale = 1f;
+            //    Vida--;
+            //}
+            if (collision.gameObject.CompareTag("Goal"))
             {
-                SceneManager.LoadScene("Game");
-                Time.timeScale = 1f;
-                Vida--;
+                screenW.ActiveScreen();
+                Debug.Log("Ganaste!");
             }
         }
 

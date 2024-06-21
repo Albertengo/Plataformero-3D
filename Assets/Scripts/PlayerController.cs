@@ -40,6 +40,7 @@ namespace Player
             Movement();
         }
 
+        #region code
         void Movement()
         {
             moveDirection = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, moveDirection.y, Input.GetAxis("Vertical") * moveSpeed);
@@ -85,5 +86,6 @@ namespace Player
             moveSpeed = moveSpeed - speedBoost;
             Debug.Log("Terminó el Boost, velocidad: " + moveSpeed);
         }
+        #endregion
     }
 }

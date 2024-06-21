@@ -28,21 +28,21 @@ public class BoosterSpawn : MonoBehaviour
     }
     public IEnumerator Despawn(GameObject boost)
     {
-        BoosterSpawned = false;
+        BoosterSpawned = false; //booster se consumió
 
-        if (boost.gameObject.CompareTag("JumpBoost"))
+        if (boost.gameObject.CompareTag("JumpBoost")) //si el booster consumido tiene de tag "jumpboost", invocar su método
             Boosters.Invoke("EndBoostJump", Boosters.BoostTime);
-        else if (boost.gameObject.CompareTag("SpeedBoost"))
+        else if (boost.gameObject.CompareTag("SpeedBoost")) //si el booster consumido tiene de tag "speedboost", invocar su método
             Boosters.Invoke("EndBoostSpeed", Boosters.BoostTime);
 
-        boost.SetActive(false);
+        boost.SetActive(false); //se desactiva el boost para q parezca q se consumió
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(5); //espera 5 segundos
 
-        Debug.Log("hola");
+        Debug.Log("pasaron 5 segundos"); //chequeador
         //transform.GetChild(transform.childCount - 1).gameObject.SetActive(true);
-        boost.SetActive(true);
-        BoosterSpawned = true;
+        boost.SetActive(true); //y vuelve a activar el boost para q parezca que respawneó
+        BoosterSpawned = true; //se ha vuelto a spawnear un booster
     }
 
     public void ActivarCorrutina(GameObject boost)

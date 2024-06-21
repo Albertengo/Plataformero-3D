@@ -8,6 +8,7 @@ TagManager:
   - KillZone
   - Enemy
   - SpeedBoost
+  - Goal
   layers:
   - Default
   - TransparentFX
